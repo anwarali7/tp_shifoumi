@@ -27,7 +27,7 @@ export const userSlice = createSlice({
           return user;
         });
       }
-    }
+    },
   },
 });
 

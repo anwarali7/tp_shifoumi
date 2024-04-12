@@ -5,6 +5,7 @@ import Leaderboard from '../components/Leaderboard/Leaderboard';
 import Signup from '../components/Signup/Signup';
 import Wrapper from '../layouts/Wrapper';
 import Users from '../components/Users/Users';
+import User from '../components/Users/User';
 
 const Root = () => {
   return (
@@ -13,6 +14,7 @@ const Root = () => {
       <Route path="/shifoumi" element={<Wrapper> <Shifoumi /></Wrapper>} />
       <Route path="/leaderboard" element={<Wrapper> <Leaderboard /></Wrapper>} />
       <Route path="/users" element={<Wrapper> <Users /></Wrapper>} />
+      <Route path="/users/:id" element={<Wrapper> <User /></Wrapper>} />
       <Route path="/signup" element={<Wrapper> <Signup /></Wrapper>} />
     </Routes>
   )
