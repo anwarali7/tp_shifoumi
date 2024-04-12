@@ -1,0 +1,59 @@
+.game-container {
+  display: flex;
+  gap: 25px;
+}
+
+.game-container .left,
+.game-container .right,
+.game-container .message {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  border: 2px solid rgb(44, 141, 57);
+  border-radius: 12px;
+  padding: 0 15px 15px 15px;
+}
+
+.player-choice-btn {
+  font-size: 2rem;
+  padding: 10px;
+  background-color: rgb(235, 235, 235);
+  border: none;
+  border-radius: 8px;
+}
+
+.player-choice-btn:hover {
+  cursor: pointer;
+}
+
+.player-choice-btn.selected {
+  background-color: rgb(61, 216, 82);
+}
+
+.player-choice-btn:active {
+  transform: scale(0.95);
+}
+
+.player-choice-btn[disabled] {
+  pointer-events: none;
+}
+
+
+.next-round {
+  margin-top: 15px;
+  font-size: 1rem!important;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.computer-choice {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 auto;
+  background-color: rgb(168, 168, 168);
+  border-radius: 8px;
+}

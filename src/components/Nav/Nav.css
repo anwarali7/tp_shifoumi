@@ -1,0 +1,47 @@
+.main-nav {
+  padding: 15px;
+  background-color: #333;
+  font-size: 1.1rem;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.main-nav a.active {
+  color: rgb(0, 238, 255);
+}
+
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.main-nav a.active::after {
+  background-color: rgb(0, 238, 255);
+}
+
+.main-nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
